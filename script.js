@@ -1,5 +1,4 @@
 
-
 const Carro = function(ligar ){
     var embreagemAtiva;
     const marcha1 = document.querySelector("#marcha1");
@@ -34,7 +33,7 @@ const Carro = function(ligar ){
     }
 
     this.getLigar = function(){
-      document.querySelector("#ligar").innerHTML = `Ligar carro:  ${this.ligar = 'ligado'}`;
+      document.querySelector("#ligar").innerHTML = `Carro:  ${this.ligar = 'ligado'}`;
       music.play();
       music.loop =true;     
       document.querySelector("#andar").innerHTML = 'Clique na embreagem e clique na marcha , para poder acelerar';
@@ -62,6 +61,7 @@ const Carro = function(ligar ){
         i.addEventListener('click', ()=>{       
             document.querySelector('.color.selected').classList.remove('selected')
             i.classList.add('selected')
+            console.log(index)
             
             if(this.ligar === 'ligado'){
                 document.querySelector("#andar").innerHTML = `Marcha trocada com sucesso`;
@@ -137,14 +137,14 @@ const Carro = function(ligar ){
             document.location.reload(true)
         }
     })
-    
+
+
 };
 
     const camaro = new Carro('desligado');
 
     
-    document.querySelector("#ligar").innerHTML = `Ligar carro:  ${camaro.ligar}`;
+    document.querySelector("#ligar").innerHTML = `Carro:  ${camaro.ligar}`;
     document.querySelector("#veloAtual").innerHTML = `Velocidade Atual:  ${camaro.velocidadeAtual}`;
 
-
-
+ 

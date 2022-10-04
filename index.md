@@ -11,9 +11,11 @@
 
 <section id="main">
             
-    <section id="ligar"> <h2></h2></section>
-    <section id="veloAtual"> <h2></h2> </section>
-    <section id="veloMaxima"> <h2></h2> </section>
+    <section id="description-text">
+        <section id="ligar"> <h2></h2></section>
+        <section id="veloAtual"> <h2></h2> </section>
+        <section id="veloMaxima"> <h2></h2> </section>
+    </section>
 
     <section>
         <button id="ligarCar" class="p">Ligar carro</button>
